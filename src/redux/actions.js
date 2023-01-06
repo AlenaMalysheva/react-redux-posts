@@ -1,6 +1,6 @@
 // в этом файле хранятся экшн криейторы( функции хранящие экшн)
 
-import { INCREMENT, DECREMENT } from "./types";
+import { INCREMENT, DECREMENT, INPUT_TEXT } from "./types";
 
 // функция возвращает обьект с типом экшена
 export function incrementLikes () {
@@ -13,5 +13,12 @@ export function incrementLikes () {
 export function decrementLikes () {
     return {
         type: DECREMENT
+    }
+}
+
+export function inputText (text) {
+    return {
+        type: INPUT_TEXT,
+        text
     }
 }

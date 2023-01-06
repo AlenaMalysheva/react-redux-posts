@@ -1,5 +1,6 @@
 import './App.css';
 import Likes from './Likes'
+import Title from './Title'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <div className="card">
           <div className="card-image">
             <img src='https://klike.net/uploads/posts/2019-07/1562069947_1.jpg' alt='sea' width= '400px'/>
+            <Title />
             <Likes />
           </div>
         </div>

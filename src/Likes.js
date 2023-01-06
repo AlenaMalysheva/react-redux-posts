@@ -16,7 +16,7 @@ return (
 // принимает состояние которое находится в store
 
 // используем функцию mapStateToProps чтобы пробросить состояние из хранилища редакс в наш компонент
-function mapStateToProps(state) {
+function mapStateToProps(state) {   // эта функция работает также как хук useSelector
     console.log('mapStateToProps >', state)
 
     const { likes } = state;
@@ -26,7 +26,7 @@ function mapStateToProps(state) {
 }
 
 // используем функцию чтобы пробросить методы 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) {  // эта функция работает также как хук useDispatch
     return {  // возвращает ОБЬЕКТ В КОТОРОМ ЛЕДИТ функциЯ
         onIncrementLikes: () => {
         // обьект который содержит type и  payload(передаваемые в экшен данные)
